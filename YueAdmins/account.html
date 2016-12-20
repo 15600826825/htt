@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>账户信息展示</title>
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/animate.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/account.css">
+  <style type="text/css">
+    .page-main-introduction{
+      margin: 20px;
+      margin-bottom: 0; 
+      float: left;
+    }
+    .page-introduction-header{
+      height: 220px;
+      background: #207a94;
+      border-radius: 4px 4px 0 0;
+      color: #fff;
+      text-align: center;
+      padding-top: 20px;
+      margin: 0;
+    }
+    .page-introduction-dt{
+      height: 120px;
+      border-radius: 20px;
+      background: #63a2b4;
+      margin:0 50px;
+    }
+    .page-introduction-dt img{
+      height: 100px;
+      margin:10px;
+      border-radius: 20px;
+    }
+    .page-introduction-dd1{
+      font-size: 18px;
+      padding-top: 18px;
+    }
+    .page-introduction-dd2{
+      padding-top: 6px;
+    }
+    .page-main-infor1{
+      background: #fff; 
+    }
+    .page-main-infor1 li{
+      height: 60px;
+      line-height: 60px;
+      padding-left: 20px;
+      color: #89817f;
+      border-bottom: 1px solid #ebeae6;
+    }
+    .page-main-infor1 li i{
+      margin-right: 15px;
+
+    }
+    .page-main-infor2{
+      margin-top: 20px;
+      background: #fff;
+    }
+    .page-main-infor2 li{
+      height: 50px;
+      line-height: 50px;
+      color: #89817f; 
+    }
+    .page-infor2-span1{
+      padding: 25px;
+    }
+    .page-main-content{
+      padding: 0;
+      margin-right: 20px;
+      float: left;
+      margin-top: 20px;
+    }
+    .page-content-header{
+      background: #fff;
+      height: 250px;
+    }
+    .page-content-header h3{
+      font-size: 24px;
+      color: #1d85a3;
+      line-height: 60px;;
+      margin: 0;
+      padding: 0;
+      padding-left: 25px;
+    }
+    .page-header-introduce{
+      height: 150px;
+      background: #48aecb;
+      color: #fff;
+      margin-left: 30px;
+      line-height: 20px;
+      padding: 40px;
+    }
+    .page-content-detailed{
+      background: #fff;
+      margin-top: 20px;
+    }
+    .page-content-detailed h3{
+      font-size: 24px;
+      color: #89817e;
+      line-height: 60px;;
+      margin: 0;
+      padding: 0;
+      padding-left: 25px;
+    }
+    .nav-account{
+      color: #fff;
+    }
+    .page-main-active{
+      background: #eee;
+      color: #fff;
+    }
+  </style>
+  <!--[if lt IE 9]>
+      <meta http-equiv="refresh" content="0;ie.html" />
+  <![endif]-->
+</head>
+<body>
+<!-- 侧边栏 -->
+   <aside id="aside">
+    <div class="sidebar">
+      <div class="sidebar-header">
+      <h4>
+        <i class="fa fa-flag"></i>
+        <strong>悦视觉</strong>
+      </h4>
+    </div>
+    <div class="line"></div>
+    <ul id="accordion" class="accordion">
+      <li>
+        <div class="link">
+          <i class="fa fa-home"></i>
+          <a href="#">首页</a>
+        </div>
+      </li>
+       <li class="open">
+        <div class="link">
+          <i class="fa fa-user"></i>账户管理<i class="fa fa-chevron-down"></i>
+        </div>
+        <ul class="submenu">
+          <li class="active"><a href="account.html">账户信息维护</a></li>
+          <li><a href="modifypassword.html">修改账户密码</a></li>
+          <li><a href="enterprise.html">注册我的企业</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="link"><i class="fa fa-desktop"></i>我的企业管理<i class="fa fa-chevron-down"></i></div>
+        <ul class="submenu">
+          <li><a href="departmentTree.html">组织部门管理</a></li>
+          <li><a href="staff.html">员工管理</a></li>
+          <li><a href="apartment.html">部门权限管理</a></li>
+          <li><a href="enterpriseedit.html">企业信息维护</a></li>
+          <li><a href="signup.html">账户代注册</a></li>
+          <li><a href="job.html">岗位管理</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="link">
+          <i class="fa fa-group"></i> 我所管理的商家
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <ul class="submenu">
+          <li><a href="shop-maintain.html">商家维护</a></li>
+          <li><a href="examine.html">商家信息审核</a></li>
+          <li><a href="contract.html">合同管理</a></li>
+          <li><a href="inquire.html">权限管理</a></li>
+          <li><a href="#">管辖分配</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="link">
+          <i class="fa fa-globe"></i> 系统管理
+          <i class="fa fa-chevron-down"></i>
+        </div>
+        <ul class="submenu">
+          <li><a href="#">系统功能树管理</a></li>
+          <li><a href="#">系统角色管理</a></li>
+          <li><a href="#">系统组织节点管理</a></li>
+          <li><a href="#">公告信息维护</a></li>
+          <li><a href="#">系统内账户维护</a></li>
+        </ul>
+      </li>                  
+    </ul>
+    </div>   
+  </aside>
+  <!-- 主页区域 -->
+  <section id="main" class="page-wrap">
+  <!-- 页头导航 -->
+    <nav id="header" class="navbar navbar-default" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="javascript:;" id="btnToggle" class="btn-toggle">
+            <i class="fa fa-bars"></i>
+          </a>
+          <form role="search" class="navbar-form" method="post" action="#">
+              <div class="form-group">
+                  <input type="text" placeholder="请输入要查找内容 …" class="form-control" name="top-search" id="top-search">
+              </div>
+          </form>
+        </div>
+        <ul class="navbar-nav pull-right"> 
+          <li class="dropdown">
+              <a class="dropdown-toggle count-info" data-toggle="dropdown" href="#" aria-expanded="false">
+                  <i class="fa fa-bell"></i> <span class="label label-warning">8</span>
+              </a>
+              <ul class="dropdown-menu dropdown-alerts">
+                  <li>
+                      <a href="mailbox.html">
+                          <div>
+                              <i class="fa fa-envelope fa-fw"></i> 您有16条未读消息
+                              <!-- <span class="pull-right text-muted small">4分钟前</span> -->
+                          </div>
+                      </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <a href="profile.html">
+                          <div>
+                              <i class="fa fa-qq fa-fw"></i> 3条新回复
+                              <!-- <span class="pull-right text-muted small">12分钟钱</span> -->
+                          </div>
+                      </a>
+                  </li>
+                  <li class="divider"></li>
+                  <li>
+                      <div class="text-center link-block">
+                          <a class="J_menuItem" href="notifications.html">
+                              <strong>查看所有 </strong>
+                              <i class="fa fa-angle-right"></i>
+                          </a>
+                      </div>
+                  </li>
+              </ul>
+          </li>
+          <li class="dropdown personal-center">
+              <a href="javascript:;" class="dropdown-toggle" id="personMenu" data-toggle="dropdown">
+                <img src="img/avatar.jpg" alt="头像">
+                <span class="username">悦视觉</span>
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu" role="menu" aria-labelledby="personMenu">
+                  <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">个人中心</a>
+                  </li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="#">设置</a>
+                  </li>
+                  <li role="presentation" class="divider"></li>
+                  <li role="presentation">
+                      <a role="menuitem" tabindex="-1" href="signin.html">退出</a>
+                  </li>
+              </ul>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- 主内容区域 -->
+    <section class="main-content animated fadeInRight">
+    	 <div class="row">
+       <div class="col-lg-12">
+        <div class="page-main-introduction col-lg-3">
+          <dl class="page-introduction-header">
+            <dt class="page-introduction-dt"><img src="img/profile-avatar.jpg"></dt>
+            <dd class="page-introduction-dd1">悦己视觉</dd>
+            <dd class="page-introduction-dd2">12345456@163.com</dd>
+          </dl>
+          <ul class="page-main-infor1">
+            <li class="page-main-active"><i class="fa fa-user"></i>账户基本信息</li>
+            <a href="accountedit.html"><li><i class="fa fa-edit"></i>编辑账户信息</li></a>
+          </ul>
+          <ul class="page-main-infor2">
+            <li>
+              <span class="page-infor2-span1">性别:</span>
+              <span class="page-infor2-span2">男</span>
+            </li>
+            <li>
+              <span class="page-infor2-span1">年龄:</span>
+              <span class="page-infor2-span2">26</span>
+            </li>
+            <li>
+              <span class="page-infor2-span1">学历:</span>
+              <span class="page-infor2-span2">本科</span>
+            </li>
+            <li>
+              <span class="page-infor2-span1">籍贯:</span>
+              <span class="page-infor2-span2">北京</span>
+            </li>
+          </ul>
+        </div>
+       <div class="col-lg-1"></div>
+        <div class="page-main-content col-lg-8">
+          <div class="page-content-header">
+            <h3>自我介绍</h3>
+            <div class="page-header-introduce">
+              “成功者永不放弃，放弃者不会胜利。“我有10年的经验和专业的网页设计，用户界面设计，交互设计方面，视觉设计和原型。我曾与著名的创业公司，包括珠江街道软件。
+            </div>
+          </div>
+          <div class="page-content-detailed">
+            <h3>账户详细信息</h3>
+            <ul class="page-detailed-infor3">          
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </section>
+    <!-- 页脚区域 -->
+   <!--  <footer class="site-footer">
+      <span>Copyright © 2016.12</span>
+    </footer> -->
+  </section>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
